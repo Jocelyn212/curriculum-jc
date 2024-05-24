@@ -33,9 +33,11 @@ import { SITE_TITLE } from "../consts";
 				>
 			</a>
 
-			<a href="https://github.com/withastro/astro" target="_blank"> </a>
-			<a href="www.linkedin.com/in/jocelyn-castro-flores"
-				><svg
+			<a
+				href="https://www.linkedin.com/in/jocelyn-castro-flores"
+				target="_blank"
+			>
+				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="36"
 					height="36"
@@ -52,49 +54,50 @@ import { SITE_TITLE } from "../consts";
 					></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"
 					></path><path d="M12 16l0 -5"></path><path
 						d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg
-				></a
-			>
+				>
+			</a>
 		</div>
 	</nav>
-</header>
-<style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
 
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
+	<style>
+		header {
+			margin: 0;
+			padding: 0 1em;
+			background: white;
+			box-shadow: 0 2px 8px rgba(var(--black), 5%);
 		}
-	}
-</style>
+		h2 {
+			margin: 0;
+			font-size: 1em;
+		}
+
+		h2 a,
+		h2 a.active {
+			text-decoration: none;
+		}
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		nav a {
+			padding: 1em 0.5em;
+			color: var(--black);
+			border-bottom: 4px solid transparent;
+			text-decoration: none;
+		}
+		nav a.active {
+			text-decoration: none;
+			border-bottom-color: var(--accent);
+		}
+		.social-links,
+		.social-links a {
+			display: flex;
+		}
+		@media (max-width: 720px) {
+			.social-links {
+				display: none;
+			}
+		}
+	</style>
+</header>
