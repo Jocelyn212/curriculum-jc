@@ -1,0 +1,109 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="bg-gradient-to-r from-black to-purple-950 text-white">
+		<Header />
+		<main>
+			<h1>Jocelyn Castro</h1>
+			<p>
+				Desarrolladora Fullstack con conocimientos de AWS y desarrollo
+				de aplicaciones móviles .
+			</p>
+			<div class="flex flex-wrap m-2">
+				<img src="/skills/Html5.svg" alt="" />
+				<img src="/skills/JavaScript.svg" alt="" />
+				<img src="/skills/AmazonWebServices.svg" alt="" />
+				<img src="/skills/AngularJS.svg" alt="" />
+				<img src="/skills/React.svg" alt="" />
+				<img src="/skills/ReactNative.svg" alt="" />
+				<img src="/skills/MongoDB.svg" alt="" />
+				<img src="/skills/Astro.svg" alt="" />
+				<img src="/skills/CSS3.svg" alt="" />
+				<img src="/skills/Ionic.svg" alt="" />
+				<img src="/skills/TailwindCSS.svg" alt="" />
+				<img src="/skills/ExpressJs.svg" alt="" />
+				<img src="/skills/Mongo-Db.svg" alt="" />
+				<img src="/skills/Nodejs.svg" alt="" />
+			</div>
+			<h5 class="mt-4">Formacion</h5>
+			<table border="1">
+				<thead class="bg-gray-50">
+					<tr>
+						<th class="px-2 py-2 text-left text-gray-500"
+							>Categoría</th
+						>
+						<th class="px-2 py-2 text-left text-gray-500">Centro</th
+						>
+						<th class="px-2 py-2 text-left text-gray-500">Horas</th>
+						<th class="px-2 py-2 text-left text-gray-500">Año</th>
+					</tr>
+				</thead>
+				<tbody class="divide-y divide-gray-200">
+					<tr>
+						<td class="px-2 py-2">Cloud AWS Re/start</td>
+						<td class="px-2 py-2">Factoria F5</td>
+						<td class="px-2 py-2">490 Hrs</td>
+						<td class="px-2 py-2">2024</td>
+					</tr>
+					<tr>
+						<td class="px-2 py-2"
+							>Desarrollo de Aplicaciones Móviles</td
+						>
+						<td class="px-2 py-2">CIFO</td>
+						<td class="px-2 py-2">290 Hrs</td>
+						<td class="px-2 py-2">2023-2024</td>
+					</tr>
+					<tr>
+						<td class="px-2 py-2">Desarrollo de Aplicaciones Web</td
+						>
+						<td class="px-2 py-2">FCI</td>
+						<td class="px-2 py-2">690 Hrs</td>
+						<td class="px-2 py-2">2023</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h5>Experiencia</h5>
+			<table border="1">
+				<thead class="bg-gray-50 text-gray-500">
+					<tr>
+						<th>Categoría</th>
+						<th>Centro</th>
+						<th>Horas</th>
+						<th>Año</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>AWS React</td>
+						<td>Fábrica 5</td>
+						<td>490 Hrs</td>
+						<td>2024</td>
+					</tr>
+					<tr>
+						<td>Desarrollo de Aplicaciones Móviles</td>
+						<td>CIFO</td>
+						<td>290 Hrs</td>
+						<td>2023-2024</td>
+					</tr>
+					<tr>
+						<td>Desarrollo de Aplicaciones Web</td>
+						<td>FCI</td>
+						<td>690 Hrs</td>
+						<td>2023</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<Footer />
+	</body>
+</html>
