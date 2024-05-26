@@ -10,165 +10,169 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-gradient-to-r from-black to-purple-950 text-white pt-24">
+	<body class="bg-gradient-to-r from-black to-purple-950 text-white">
 		<Header />
-		<main>
-			<div class="flex">
-				<h2 class="m-auto">Jocelyn Castro</h2>
+		<main class="mt-0">
+			<div class="flex justify-between items-center flex-col sm:flex-row">
+				<h2 class="">Jocelyn Castro</h2>
 				<img src="/avatar2.png" alt="" width="120" height="120" />
 			</div>
+
 			<p>
-				Desarrolladora Fullstack con conocimientos de AWS y desarrollo
-				de aplicaciones móviles .
+				<strong> Desarrolladora Fullstack</strong> con conocimientos de AWS
+				y desarrollo de aplicaciones móviles .
 			</p>
 			<div class="flex flex-wrap m-4 animate-fade-right">
 				<img src="/skills/aws.svg" alt="" />
 				<img src="/skills/Html5.svg" alt="" />
 				<img src="/skills/JavaScript.svg" alt="" />
 				<img src="/skills/AngularJS.svg" alt="" />
-				<img src="/skills/ReactNative.svg" alt="" />
+				<img src="/skills/React2.svg" alt="" />
 				<img src="/skills/Astro.svg" alt="" />
 				<img src="/skills/CSS3.svg" alt="" />
 				<img src="/skills/Ionic.svg" alt="" />
 				<img src="/skills/TailwindCSS.svg" alt="" />
-				<img src="/skills/ExpressJs.svg" alt="" />
-				<img src="/skills/Mongo-Db.svg" alt="" />
+				<img src="/skills/Express.svg" alt="" />
+				<img src="/skills/Mongo.svg" alt="" />
 				<img src="/skills/Nodejs.svg" alt="" />
 			</div>
 			<h5 class="mt-4">Formacion</h5>
-			<table border="1">
-				<thead class="bg-gray-50">
-					<tr>
-						<th class="px-2 py-2 text-left text-gray-500"
-							>Categoría</th
-						>
-						<th class="px-2 py-2 text-left text-gray-500">Centro</th
-						>
-						<th class="px-2 py-2 text-left text-gray-500">Horas</th>
-						<th class="px-2 py-2 text-left text-gray-500">Año</th>
-					</tr>
-				</thead>
-				<tbody class="divide-y divide-gray-200">
-					<tr>
-						<td class="px-2 py-2">Cloud AWS Re/start</td>
-						<td class="px-2 py-2">Factoria F5</td>
-						<td class="px-2 py-2">490 Hrs</td>
-						<td class="px-2 py-2">2024</td>
-					</tr>
-					<tr>
-						<td class="px-2 py-2"
-							>Desarrollo de Aplicaciones Móviles</td
-						>
-						<td class="px-2 py-2">CIFO</td>
-						<td class="px-2 py-2">290 Hrs</td>
-						<td class="px-2 py-2">2023-2024</td>
-					</tr>
-					<tr>
-						<td class="px-2 py-2">Desarrollo de Aplicaciones Web</td
-						>
-						<td class="px-2 py-2">FCI</td>
-						<td class="px-2 py-2">690 Hrs</td>
-						<td class="px-2 py-2">2023</td>
-					</tr>
-					<tr>
-						<td class="px-2 py-2"
-							>Tècnic en Seguritat de redes y Sistemas</td
-						>
-						<td class="px-2 py-2">Centre Pridem</td>
-						<td class="px-2 py-2">Manresa</td>
-						<td class="px-2 py-2">2008</td>
-					</tr>
-					<tr>
-						<td class="px-2 py-2">Autocad 2D</td>
-						<td class="px-2 py-2">Centre Ofimatics</td>
-						<td class="px-2 py-2">Manresa</td>
-						<td class="px-2 py-2">2007</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="table-responsive">
+				<table border="1">
+					<thead class="bg-gray-50">
+						<tr>
+							<th class="px-2 py-2 text-left text-gray-500"
+								>Categoría</th
+							>
+							<th class="px-2 py-2 text-left text-gray-500"
+								>Centro</th
+							>
+							<th class="px-2 py-2 text-left text-gray-500"
+								>Horas</th
+							>
+							<th class="px-2 py-2 text-left text-gray-500"
+								>Año</th
+							>
+						</tr>
+					</thead>
+					<tbody class="divide-y divide-gray-200">
+						<tr>
+							<td class="px-2 py-2">Cloud AWS Re/start</td>
+							<td class="px-2 py-2">Factoria F5</td>
+							<td class="px-2 py-2">490 Hrs</td>
+							<td class="px-2 py-2">2024</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2"
+								>Desarrollo de Aplicaciones Móviles</td
+							>
+							<td class="px-2 py-2">CIFO</td>
+							<td class="px-2 py-2">290 Hrs</td>
+							<td class="px-2 py-2">2023-2024</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2"
+								>Desarrollo de Aplicaciones Web</td
+							>
+							<td class="px-2 py-2">FCI</td>
+							<td class="px-2 py-2">690 Hrs</td>
+							<td class="px-2 py-2">2023</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2"
+								>Tècnic en Seguritat de redes y Sistemas</td
+							>
+							<td class="px-2 py-2">Centre Pridem</td>
+							<td class="px-2 py-2">Manresa</td>
+							<td class="px-2 py-2">2008</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2">Autocad 2D</td>
+							<td class="px-2 py-2">Centre Ofimatics</td>
+							<td class="px-2 py-2">Manresa</td>
+							<td class="px-2 py-2">2007</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
 			<h5 class="mt-4">Experiencia</h5>
-			<table border="1">
-				<thead class="bg-gray-50 text-gray-500">
-					<tr>
-						<th class="px-2 py-2 text-left text-gray-500"
-							>Categoría</th
-						>
-						<th class="px-2 py-2 text-left text-gray-500">Centro</th
-						>
-						<th class="px-2 py-2 text-left text-gray-500">Ciudad</th
-						>
-						<th class="px-2 py-2 text-left text-gray-500">Año</th>
-					</tr>
-				</thead>
-				<tbody class="divide-y divide-gray-200">
-					<tr>
-						<td class="px-2 py-2">Desarrollo de Aplicaciones web</td
-						>
-						<td class="px-2 py-2">Freelance</td>
-						<td class="px-2 py-2">Manresa</td>
-						<td class="px-2 py-2">2023-2024</td>
-					</tr>
-					<tr>
-						<td class="px-2 py-2"
-							>Departamento logistica
-							Manipulación,preparación,pincking , embalaje de
-							joyas y complementos</td
-						>
-						<td class="px-2 py-2">Joyeria TOUS S.A</td>
-						<td class="px-2 py-2">Manresa</td>
-						<td class="px-2 py-2">2019-2021</td>
-					</tr>
-					<tr>
-						<td class="px-2 py-2"
-							>Encargada del la organización de trabajadores y
-							trato comercial con los clientes</td
-						>
-						<td class="px-2 py-2">Dictum Domo S.L.</td>
-						<td class="px-2 py-2">Granollers</td>
-						<td class="px-2 py-2">2018-2019</td>
-					</tr>
-					<tr>
-						<td class="px-2 py-2"
-							>Encargada de la organización ,mantenimiento y de la
-							venta al público</td
-						>
-						<td class="px-2 py-2">Select-Fruits Garcia S.L</td>
-						<td class="px-2 py-2">Manresa</td>
-						<td class="px-2 py-2">2016</td>
-					</tr>
-					<tr>
-						<td class="px-2 py-2"
-							>Encargada del departamento de Compras . organizar
-							todo el departamento Comprar y clasificar los
-							productos</td
-						>
-						<td class="px-2 py-2">Macaco S.L</td>
-						<td class="px-2 py-2">Manresa</td>
-						<td class="px-2 py-2">2013-2014</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="table-responsive">
+				<table border="1">
+					<thead class="bg-gray-50 text-gray-500">
+						<tr>
+							<th class="px-2 py-2 text-left text-gray-500"
+								>Categoría</th
+							>
+							<th class="px-2 py-2 text-left text-gray-500"
+								>Centro</th
+							>
+							<th class="px-2 py-2 text-left text-gray-500"
+								>Ciudad</th
+							>
+							<th class="px-2 py-2 text-left text-gray-500"
+								>Año</th
+							>
+						</tr>
+					</thead>
+					<tbody class="divide-y divide-gray-200">
+						<tr>
+							<td class="px-2 py-2"
+								>Desarrollo de Aplicaciones web</td
+							>
+							<td class="px-2 py-2">Freelance</td>
+							<td class="px-2 py-2">Manresa</td>
+							<td class="px-2 py-2">2023-2024</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2"
+								>Departamento logistica
+								Manipulación,preparación,pincking , embalaje de
+								joyas y complementos</td
+							>
+							<td class="px-2 py-2">Joyeria TOUS S.A</td>
+							<td class="px-2 py-2">Manresa</td>
+							<td class="px-2 py-2">2019-2021</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2"
+								>Encargada del la organización de trabajadores y
+								trato comercial con los clientes</td
+							>
+							<td class="px-2 py-2">Dictum Domo S.L.</td>
+							<td class="px-2 py-2">Granollers</td>
+							<td class="px-2 py-2">2018-2019</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2"
+								>Encargada de la organización ,mantenimiento y
+								de la venta al público</td
+							>
+							<td class="px-2 py-2">Select-Fruits Garcia S.L</td>
+							<td class="px-2 py-2">Manresa</td>
+							<td class="px-2 py-2">2016</td>
+						</tr>
+						<tr>
+							<td class="px-2 py-2"
+								>Encargada del departamento de Compras .
+								organizar todo el departamento Comprar y
+								clasificar los productos</td
+							>
+							<td class="px-2 py-2">Macaco S.L</td>
+							<td class="px-2 py-2">Manresa</td>
+							<td class="px-2 py-2">2013-2014</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</main>
 		<Footer />
 		<style>
-			/* styles.css */
-			.circle-container {
-				width: 8rem; /* Ajusta el tamaño según sea necesario */
-				height: 8rem; /* Ajusta el tamaño según sea necesario */
-				border-radius: 50%;
-				overflow: hidden;
-				position: relative;
-				margin: 10px;
-			}
-
-			.circle-image {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				position: absolute;
-				top: 0;
-				left: 0;
+			@media (max-width: 640px) {
+				.table-responsive {
+					overflow-x: auto;
+					display: block;
+				}
 			}
 		</style>
 	</body>
