@@ -5,11 +5,12 @@ import { SITE_TITLE } from "../consts";
 
 <header>
 	<nav>
-		<h2 class="text-gray-900">
-			<img src="/avatar2.png" alt="" width="120" height="120" /><a
+		<div class="text-gray-900 mt-6">
+			<img src="/JCdevHub.svg" alt="Logo" width="80" height="80" /><a
 				href="/">{SITE_TITLE}</a
 			>
-		</h2>
+		</div>
+
 		<div class="internal-links text-gray-900">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
@@ -65,8 +66,13 @@ import { SITE_TITLE } from "../consts";
 		header {
 			margin: 0;
 			padding: 0 1em;
-			background: white;
+			/* background: white; */
+			background: rgba(255, 255, 255, 0.8);
 			box-shadow: 0 2px 8px rgba(var(--black), 5%);
+			position: fixed;
+			top: 0;
+			width: 100%;
+			margin: 0;
 		}
 		h2 {
 			margin: 0;

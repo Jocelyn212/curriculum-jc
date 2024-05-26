@@ -10,12 +10,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-gradient-to-r from-black to-purple-950 text-white">
+	<body class="bg-gradient-to-r from-black to-purple-950 text-white pt-24">
 		<Header />
 		<main>
-			<img src="/avatar2.png" alt="" width="120" height="120" />
-			<h2>Jocelyn Castro</h2>
-
+			<div class="flex">
+				<h2 class="m-auto">Jocelyn Castro</h2>
+				<img src="/avatar2.png" alt="" width="120" height="120" />
+			</div>
 			<p>
 				Desarrolladora Fullstack con conocimientos de AWS y desarrollo
 				de aplicaciones móviles .
