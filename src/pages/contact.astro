@@ -1,0 +1,57 @@
+---
+// src/pages/contact.astro
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Tu Nombre</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body class="bg-gradient-to-r from-black to-purple-950 text-white">
+    <Header />
+    <main>
+      <h1 class="text-center m-8 text-3xl">Contacto</h1>
+
+      <form
+        action="https://formspree.io/f/{your-id}"
+        method="POST"
+        class="flex flex-col gap-4 w-96 mx-auto"
+      >
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <section class="text-center m-6">
+        <p>Para más información, puedes contactarme a través de:</p>
+        <ul>
+          <li>Teléfono: +34 684-079-055</li>
+          <li>Email: jocelyn.cf@gmail.com</li>
+          <li>
+            LinkedIn: <a
+              href="https://www.linkedin.com/in/jocelyn-castro-flores/"
+              >https://www.linkedin.com/in/jocelyn-castro-flores/</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
+<style>
+  li {
+    margin: 10px;
+  }
+</style>

@@ -1,0 +1,52 @@
+---
+// src/pages/portfolio.astro
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+
+const projects = [
+  {
+    title: "Web de DjMain",
+    description: "Pagina web realizada con Astro,y TailwindCSS.",
+    image:
+      "https://res.cloudinary.com/pruebaweb/image/upload/v1717118926/Im%C3%A1genes%20de%20proyectos/Captura_de_pantalla_2024-05-31_a_las_3.24.59_zdnyws.png",
+    link: "https://alexmain.vercel.app",
+  },
+  {
+    title: "Pagina de juegos Nintendo Switch",
+    description:
+      "Proyecto en javascript, html y css. Usando Mongo Atlas y Express.",
+    image:
+      "https://res.cloudinary.com/pruebaweb/image/upload/v1696990455/Captura_de_pantalla_2023-10-11_a_las_4.06.36_hblm9j.png",
+    link: "https://juegos-e3yq.onrender.com",
+  },
+  {
+    title: "Web de Agencia Inmobiliaria",
+    description:
+      "Proyecto realizado con React y TailwindCSS.Utilizando MongoAtlas y Express.",
+    image:
+      "https://res.cloudinary.com/pruebaweb/image/upload/v1717119654/Im%C3%A1genes%20de%20proyectos/Captura_de_pantalla_2024-05-31_a_las_3.36.52_hfoymr.png",
+    link: "https://link-to-project2.com",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body class="bg-gradient-to-r from-black to-purple-950 text-white">
+    <Header />
+    <main>
+      <h2 class="text-center m-5">Muestra de algunos proyectos</h2>
+      <section class="m-24 mt-5 animate-fade-left">
+        {projects.map((project) => <ProjectCard {...project} />)}
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
